@@ -1,0 +1,256 @@
+/* Global Styles */
+
+* {
+    /* Reset box model and remove margins and padding */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Set font family, line height, color, and background color */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Section Styles */
+
+.section {
+    /* Set display, alignment, and padding for sections */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.section.dark {
+    /* Set dark background color and text color for dark sections */
+    background-color: #15151d;
+    color: #fff;
+}
+
+.section.text {
+    /* Set display and gap for text elements */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section.headerText {
+    /* Set font size, weight, line height, and color for header text */
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.45;
+    color: #333;
+}
+
+.section.body {
+    /* Set font size, line height, weight, and color for body text */
+    font-size: 5rem;
+    line-height: 2;
+    font-weight: 400;
+    color: #333;
+}
+
+.section.body1 {
+    /* Set font size, line height, weight, and color for body text with center alignment */
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2;
+    font-weight: 400;
+    color: #fff;
+}
+
+.section.image {
+    /* Set display for image elements */
+    display: flex;
+}
+
+.section.image img {
+    /* Set width, height, max width, and animation for images */
+    width: 100%;
+    height: auto;
+    max-width: 60rem;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Section1 Styles */
+
+.section1 {
+    /* Set display, alignment, padding, and height for section 1 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    height: 50vh;
+    background-color: #15151d;
+    position: relative;
+}
+
+.section1.foot {
+    /* Set font size, letter spacing, color, and text alignment for footer text */
+    font-size: 112px;
+    letter-spacing: 0.13em;
+    color: #60608f;
+    text-align: center;
+}
+
+.contact-info {
+    /* Set bottom, left, and right positions for contact info */
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.contact-info.body {
+    /* Set font size, color, and weight for contact info text */
+    font-size: 1.5rem;
+    color: #60608f;
+    font-weight: 600;
+}
+
+/* Color Scheme */
+
+.pink {
+    /* Set pink color */
+    color: #ff69b4;
+}
+
+.purple {
+    /* Set purple color */
+    color: #7a288a;
+}
+
+/* Animations */
+
+@keyframes floating {
+
+    /* Define floating animation */
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+
+    /* Set styles for screens with max width of 1024px */
+    .section {
+        padding: 10px;
+    }
+
+    .section.headerText {
+        font-size: 2rem;
+    }
+
+    .section.body,
+    .section.body1 {
+        font-size: 1rem;
+    }
+
+    .section.image img {
+        max-width: 30rem;
+    }
+
+    .section1.foot {
+        font-size: 2.5rem;
+        color: #333;
+    }
+
+    .section1.body {
+        font-size: 1.2rem;
+    }
+
+}
+
+.container-fluid,
+.header-nav,
+.navbar,
+.nav-item,
+.section,
+.footer {
+    /* Remove borders for these elements */
+    border: none !important;
+}
+
+/* Button Styles */
+
+.btn {
+    /* Set background color, text color, border, and padding for buttons */
+    background-color: #7a288a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    /* Set hover styles for buttons */
+    background-color: #60608f;
+}
+
+.btn-primary {
+    /* Set primary button styles */
+    background-color: #7a288a;
+    border-color: #7a288a;
+}
+
+.btn-primary:hover {
+    /* Set hover styles for primary buttons */
+    background-color: #60608f;
+    border-color: #60608f;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Set styles for screens with max width of 768px */
+    .section1.body {
+        font-size: 0.8rem;
+    }
+
+    .e {
+        height: 100%;
+    }
+}
+
+/* Contact Info Styles */
+.contact-info p {
+    /* font-size: 1.5rem; */
+    /* color: #60608f; */
+    font-weight: 600;
+}
+
+.p2 {
+    font-size: large;
+}
+
+@media (min-width: 1025px) {
+    .contact-info p {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 700;
+
+    }
+
+    .p2 {
+        font-size: xx-large;
+    }
+}

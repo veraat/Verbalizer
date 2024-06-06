@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+    --mainColor: #15151d;
+    --body: #25222c;
+    --mainColorLight: #6bb8ff;
+    --secondaryColor: #fff;
+    --textColor: #fff;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 2rem 120px;
+    width: 100%;
+    position: relative;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: all 250ms ease;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #c6c6c6;
+    font-size: 1.25rem;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--textColor);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.header-nav div,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+
+
+    .header-nav nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transform: translateY(-100vh);
+        transition: 800ms ease;
+    }
+
+    nav a {
+        font-size: 1.25rem;
+    }
+}
