@@ -25,6 +25,7 @@
     position: relative;
     background-color: var(--mainColor);
     color: var(--textColor);
+    z-index: 1;
 }
 
 nav a {

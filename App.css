@@ -33,30 +33,25 @@ body {
     color: #fff;
 }
 
-.section.text {
-    /* Set display and gap for text elements */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
 
-.section.headerText {
+
+.headerText {
     /* Set font size, weight, line height, and color for header text */
-    font-size: 2.5rem;
+    font-size: 5.5rem;
     font-weight: 700;
     line-height: 1.45;
-    color: #333;
+    color: #fff;
 }
 
-.section.body {
+.body {
     /* Set font size, line height, weight, and color for body text */
-    font-size: 5rem;
+    font-size: 2.5rem;
     line-height: 2;
     font-weight: 400;
-    color: #333;
+    color: #fff;
 }
 
-.section.body1 {
+.body1 {
     /* Set font size, line height, weight, and color for body text with center alignment */
     font-size: 1.5rem;
     text-align: center;
@@ -65,13 +60,9 @@ body {
     color: #fff;
 }
 
-.section.image {
+.image {
     /* Set display for image elements */
     display: flex;
-}
-
-.section.image img {
-    /* Set width, height, max width, and animation for images */
     width: 100%;
     height: auto;
     max-width: 60rem;
@@ -94,12 +85,12 @@ body {
     position: relative;
 }
 
-.section1.foot {
+.foot {
     /* Set font size, letter spacing, color, and text alignment for footer text */
     font-size: 112px;
     letter-spacing: 0.13em;
-    color: #60608f;
     text-align: center;
+    color: #fff;
 }
 
 .contact-info {
@@ -109,7 +100,7 @@ body {
     right: 0;
 }
 
-.contact-info.body {
+.body {
     /* Set font size, color, and weight for contact info text */
     font-size: 1.5rem;
     color: #60608f;
@@ -229,6 +220,14 @@ body {
     .e {
         height: 100%;
     }
+
+    .headerText {
+        font-size: 2.5rem;
+    }
+
+    .body {
+        font-size: 1.5rem;
+    }
 }
 
 /* Contact Info Styles */
@@ -251,6 +250,6 @@ body {
     }
 
     .p2 {
-        font-size: xx-large;
+        font-size: xxx-large;
     }
 }
